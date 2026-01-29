@@ -1,0 +1,15 @@
+name = "amongcraft"
+type = "javascript"  # Estamos usando JavaScript sin Node.js
+
+account_id = "tu_account_id"  # Reemplaza con tu account_id de Cloudflare
+workers_dev = true
+compatibility_date = "2026-01-28"
+
+[build]
+command = "echo 'No build step required'"  # No necesitamos pasos de build
+
+[[workers_dev]]
+route = "https://tusitio.workers.dev/*"  # Ajusta la ruta de tu Worker si es necesario
+
+[build.upload]
+dir = "."  # Usamos la raíz del proyecto (no necesitamos una carpeta 'public')
