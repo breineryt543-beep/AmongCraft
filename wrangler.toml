@@ -1,5 +1,5 @@
 name = "amongcraft"
-type = "javascript"  # Estamos usando JavaScript sin Node.js
+type = "javascript"  # Usamos JavaScript sin Node.js
 
 account_id = "tu_account_id"  # Reemplaza con tu account_id de Cloudflare
 workers_dev = true
