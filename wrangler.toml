@@ -1,5 +1,5 @@
 name = "amongcraft"
-type = "javascript"  # Usamos JavaScript puro (sin Node.js)
+type = "javascript"  # Usamos JavaScript sin Node.js
 
 account_id = "tu_account_id"  # Reemplaza con tu account_id de Cloudflare
 workers_dev = true
@@ -15,4 +15,4 @@ route = "https://tusitio.workers.dev/*"  # Ajusta la ruta de tu Worker si es nec
 dir = "."  # Usamos la raíz del proyecto
 
 [main]
-script = "index.js"  # Especificamos que 'index.js' es el entry point
+script = "index.js"  # Aseguramos que 'index.js' es el entry point
