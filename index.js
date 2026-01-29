@@ -1,5 +1,6 @@
 // index.js (Cloudflare Worker)
 
+// Definimos los archivos estáticos
 const assets = {
   "/": "<html><body><h1>¡Bienvenido a AmongCraft!</h1><script src='/app.js'></script></body></html>",
   "/index.html": "<html><body><h1>¡Bienvenido a AmongCraft!</h1><script src='/app.js'></script></body></html>",
@@ -7,6 +8,7 @@ const assets = {
   "/app.js": "console.log('¡El juego ha comenzado!');",
 };
 
+// Función para manejar las solicitudes
 async function handleRequest(request) {
   const url = new URL(request.url);
   const path = url.pathname;
@@ -24,6 +26,7 @@ async function handleRequest(request) {
   }
 }
 
+// Escuchamos las solicitudes de fetch
 addEventListener("fetch", event => {
   event.respondWith(handleRequest(event.request));
 });
