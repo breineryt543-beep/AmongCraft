@@ -12,4 +12,5 @@ command = "echo 'No build step required'"  # No necesitamos pasos de build
 route = "https://tusitio.workers.dev/*"  # Ajusta la ruta de tu Worker si es necesario
 
 [build.upload]
-dir = "."  # Usamos la raíz del proyecto (no necesitamos una carpeta 'public')
+dir = "."  # Usamos la raíz del proyecto, ya que los archivos están en la raíz
+
