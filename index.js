@@ -1,4 +1,4 @@
-// index.js
+// index.js (Cloudflare Worker)
 
 const assets = {
   "/": "<html><body><h1>¡Bienvenido a AmongCraft!</h1><script src='/app.js'></script></body></html>",
